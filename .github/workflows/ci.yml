@@ -12,6 +12,8 @@ jobs:
         run: npm install
       - name: Start the server
         run: npm run pm2-start
+      - name: Sleep for 1 minute
+        run: sleep 60
       - name: Calling the api
         run: |
           curl http://localhost:3000/

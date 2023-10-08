@@ -3,5 +3,5 @@
 1.  Create a basic express app
 2.  Push to github in a repository
 3.  Create cyclic signup using github
-4.  Link the express via cyclic
+4.  Link the express via cyclic and allow the permission
 5.  Deploy

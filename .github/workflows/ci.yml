@@ -1,0 +1,17 @@
+name: CI
+on:
+  workflow_dispatch:
+  push:
+jobs:
+  boot:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get the code
+        uses: actions/checkout@v3
+      - name: Install dependencies
+        run: npm install
+      - name: Start the server
+        run: npm start
+      - name: Calling the api
+        run: |
+          curl http://localhost:3000/

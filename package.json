@@ -4,6 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "pm2-start": "pm2 start index.js --name cyclic-nodejs-express-api",
+    "pm2-restart": "pm2 restart cyclic-nodejs-express-api",
+    "pm2-stop": "pm2 stop cyclic-nodejs-express-api",
     "start": "node index.js",
     "dev": "nodemon index.js"
   },
@@ -11,6 +14,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "pm2": "^5.3.0"
   }
 }
